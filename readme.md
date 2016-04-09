@@ -31,9 +31,9 @@ Follow the linked tutorial until you get to **Step Two** (or follow the tutorial
 
 ## 3. Figure out what you want (1)
 
-The MHL has made our life a lot easier by providing a list of all its journals in a spreadsheet. You can download the spreadsheet by going to the MHL's [list of journals](http://www.medicalheritage.org/historical-american-medical-journals/) and clicking on the link shown below. 
+The MHL has made our life a lot easier by providing a list of all its journals in a spreadsheet. You can download the spreadsheet by going to the MHL's [list of journals](http://www.medicalheritage.org/historical-american-medical-journals/) and clicking on the link shown below.
 
-(**CSV**, which stands for** comma-separated values,** is a generic term for a spreadsheet. It's a little bit like a .txt document versus a .docx document. By default, CSVs usually open in Excel, or whichever spreadsheet application you have on your computer.)
+(**CSV**, which stands for **comma-separated values,** is a generic term for a spreadsheet. It's a little bit like a .txt document versus a .docx document. By default, CSVs usually open in Excel, or whichever spreadsheet application you have on your computer.)
 
 ![][2]
 
@@ -59,7 +59,7 @@ Our spreadsheet contains URLs, but they don't go straight to the PDFs that we wa
 
 ## 6. Investigate the URLs (2)
 
-Let's take a closer look at those links to the volume in different formats. If you right-click on the **PDF** link on the lower right-hand part of the page, you can copy the link address. 
+Let's take a closer look at those links to the volume in different formats. If you right-click on the **PDF** link on the lower right-hand part of the page, you can copy the link address.
 
 Paste it into a text document, so you can see what the address is. It should look something like [https://archive.org/download/homoeopa12chic/homoeopa12chic.pdf](https://archive.org/download/homoeopa12chic/homoeopa12chic.pdf) .
 
@@ -69,7 +69,7 @@ Paste it into a text document, so you can see what the address is. It should loo
 
 ## 7. Compare the two URLs
 
-If you compare the URL to the PDF with the URL to the main page for each journal volume, you'll see that they're a lot alike, but they also contain a couple of differences. Where the first link contains the word details, the second contains the word download. And the second URL has an extra chunk at the end: /homeopa12chic.pdf.
+If you compare the URL that goes to the PDF with the URL that goes to the main page for each journal volume, you'll see that they're a lot alike, but they also contain a couple of differences. Where the first link contains the word **details**, the second contains the word **download**. And the second URL has an extra chunk at the end: **/homeopa12chic.pdf**.
 
 In order to automatically download the journal volumes as PDFs, we need to alter our column of URLs so that instead of linking to the main page for each journal volume, each link goes directly to the PDF for that volume.
 
@@ -79,7 +79,7 @@ In order to automatically download the journal volumes as PDFs, we need to alter
 
 ## 8. Alter the URLs (1)
 
-The first part of our task is pretty simple. We can use **find and replace** (**Edit -> Find -> Replace**) to replace details with download. 
+The first part of our task is pretty simple. We can use **find and replace** (**Edit -> Find -> Replace**) to replace details with download.
 
 But what about that extra piece at the end?
 
@@ -109,7 +109,7 @@ Your URLs will be a little easier to work with, now that each part of them is in
 
 ## 11. Alter the URLs (3)
 
-Now copy the last column into the next column (column **F **in the image below). And in the next column (column **G **in the image below), copy .pdf into every row. 
+Now copy the last column into the next column (column **F **in the image below). And in the next column (column **G **in the image below), copy .pdf into every row.
 
 (You can type .pdf into cell G1, then grab the cell's bottom right corner and drag it straight down to copy .pdf into every cell in the column.)
 
@@ -123,7 +123,7 @@ OK, we now have the basic parts we need for each URL. Let's glue those addresses
 
 In the next column (column **H** in the image below), enter the following fomula: =CONCATENATE(A2,"/",B2,"/",C2,"/",D2,"/",E2,"/",F2,G2). This instructs Excel to combine all the preceding cells in the row, separating each part with a backslash. The one exception is the last part of the URL, **.pdf**, which doesn't have a preceding slash.
 
-After you enter the formula, press return. Now we want to paste that formula into every cell. Drag the bottom right corner of the cell into which you've entered the formula (cell **H2** in the image below) straight down, so that the formula is copied into each cell in column **H**, until you reach the end of your list of URLs. 
+After you enter the formula, press return. Now we want to paste that formula into every cell. Drag the bottom right corner of the cell into which you've entered the formula (cell **H2** in the image below) straight down, so that the formula is copied into each cell in column **H**, until you reach the end of your list of URLs.
 
 Luckily, Excel is smart enough to modify the formula as you paste it down, so that the formula refers to the cells in the appropriate row.
 
