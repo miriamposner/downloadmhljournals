@@ -79,7 +79,7 @@ In order to automatically download the journal volumes as PDFs, we need to alter
 
 ## 8. Alter the URLs (1)
 
-The first part of our task is pretty simple. We can use **find and replace** (**Edit -> Find -> Replace**) to replace details with download.
+The first part of our task is pretty simple. We can use **find and replace** (**Edit -> Find -> Replace**) to replace `details` with `download`.
 
 But what about that extra piece at the end?
 
@@ -109,9 +109,9 @@ Your URLs will be a little easier to work with, now that each part of them is in
 
 ## 11. Alter the URLs (3)
 
-Now copy the last column into the next column (column **F **in the image below). And in the next column (column **G **in the image below), copy .pdf into every row.
+Now copy the last column into the next column (column **F** in the image below). And in the next column (column **G** in the image below), copy `.pdf` into every row.
 
-(You can type .pdf into cell G1, then grab the cell's bottom right corner and drag it straight down to copy .pdf into every cell in the column.)
+(You can type `.pdf` into cell **G1**, then grab the cell's bottom right corner and drag it straight down to copy .pdf into every cell in the column.)
 
 ![][10]
 
