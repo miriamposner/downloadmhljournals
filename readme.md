@@ -1,6 +1,6 @@
 # Download journals in bulk from the Medical Heritage Library
 
-The [Medical Heritage Library](http://www.medicalheritage.org/) is terrific for searching and browsing, but it also has great potential for text- and image-mining. In order to work with the MHL's materials at scale, you'll need to download a large number of documents. You *could* individually download every document you want, but with some simple commands, you can speed up that process significantly. Plus you can use these apply basic techniques to many different bulk-downloading tasks.
+The [Medical Heritage Library](http://www.medicalheritage.org/) is terrific for searching and browsing, but it also has great potential for text- and image-mining. In order to work with the MHL's materials at scale, you'll need to download a large number of documents. You *could* individually download every document you want, but with some simple commands, you can speed up that process significantly. Plus you can apply these basic techniques to many different bulk-downloading tasks.
 
 In this tutorial, we'll learn how to use a program called **wget** to download the entire run of a journal from the Medical Heritage Library.
 
