@@ -91,7 +91,7 @@ But what about that extra piece at the end?
 
 There are many ways we could get the results we need, but let's stick with Excel. (You can do this with Google Sheets, too.) We'll start by separating each part of the URL into a different cell, so that the URLs are easier to work with.
 
-Select the URLs in the URL column. Then, from Excel's **Data** tab, click on **Convert Text to Columns**. In the window that pops up, select **Delimited. **Then, in the next window, select the **Other** radio button and enter / as the delimiter. This means that the fields you want to separate are divided by a /.
+Select the URLs in the URL column. Then, from Excel's **Data** tab, click on **Convert Text to Columns**. In the window that pops up, select **Delimited.** Then, in the next window, select the **Other** radio button and enter ``/`` as the delimiter. This means that the fields you want to separate are divided by a ``/``.
 
 Then click **Finish**.
 
@@ -121,7 +121,7 @@ Now copy the last column into the next column (column **F **in the image below).
 
 OK, we now have the basic parts we need for each URL. Let's glue those addresses back together.
 
-In the next column (column **H** in the image below), enter the following fomula: =CONCATENATE(A2,"/",B2,"/",C2,"/",D2,"/",E2,"/",F2,G2). This instructs Excel to combine all the preceding cells in the row, separating each part with a backslash. The one exception is the last part of the URL, **.pdf**, which doesn't have a preceding slash.
+In the next column (column **H** in the image below), enter the following fomula: ``=CONCATENATE(A2,"/",B2,"/",C2,"/",D2,"/",E2,"/",F2,G2)``. This instructs Excel to combine all the preceding cells in the row, separating each part with a backslash. The one exception is the last part of the URL, **.pdf**, which doesn't have a preceding slash.
 
 After you enter the formula, press return. Now we want to paste that formula into every cell. Drag the bottom right corner of the cell into which you've entered the formula (cell **H2** in the image below) straight down, so that the formula is copied into each cell in column **H**, until you reach the end of your list of URLs.
 
@@ -163,7 +163,7 @@ Follow **steps four and five** on [this tutorial](https://github.com/bmschmidt/m
 
 ## 16. Run a little bit of code
 
-This part could hardly be easier! Now that you're in the folder that contains **urls.txt**, type wget -i urls.txt into your terminal or command prompt. (If you named your list of URLs something besides **urls.txt**, substitute that name for **urls.txt** in the code snippet.)
+This part could hardly be easier! Now that you're in the folder that contains **urls.txt**, type `wget -i urls.txt` into your terminal or command prompt. (If you named your list of URLs something besides **urls.txt**, substitute that name for **urls.txt** in the code snippet.)
 
 Now watch as your computer automatically downloads your files into the same folder where your list of URLs resides!
 
