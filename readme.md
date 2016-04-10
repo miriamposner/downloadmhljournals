@@ -35,6 +35,8 @@ The MHL has made our life a lot easier by providing a list of all its journals i
 
 (**CSV**, which stands for **comma-separated values,** is a generic term for a spreadsheet. It's a little bit like a .txt document versus a .docx document. By default, CSVs usually open in Excel, or whichever spreadsheet application you have on your computer.)
 
+*Note: As of April 9, 2016, the link to the CSV on the MHL's Browse Journals page is broken. However, you can access an archived version of this spreadsheet [here](https://web.archive.org/web/20151005165810/http://www.medicalheritage.org/wp-content/uploads/2015/03/Serial-Titles-User-List_v8.csv).*
+
 ![][2]
 
 [2]: images/download-journals-in-bulk-from-the-medical-heritage-library/figure-out-what-you-want--1-.png
